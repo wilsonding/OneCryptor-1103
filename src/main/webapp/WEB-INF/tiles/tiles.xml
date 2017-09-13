@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software foundation/DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+<!-- main pages -->
+<definition name="layout.main.basic" template="/WEB-INF/tiles/layouts/main_basic.jsp">
+<put-attribute name="title" value="OneCryptor"/>
+<put-attribute name="main_header" value="/WEB-INF/views/main/header.jsp"/>
+<put-attribute name="main_body" value=""/>
+<put-attribute name="main_footer" value="/WEB-INF/views/main/footer.jsp"/>
+</definition>
+
+<definition name="main.home" extends="layout.main.basic">
+<put-attribute name="title" value="Home"/>
+<put-attribute name="main_body" value="/WEB-INF/views/main/home.jsp"/>
+</definition>
+
+<definition name="main.download" extends="layout.main.basic">
+<put-attribute name="title" value="Download"/>
+<put-attribute name="main_body" value="/WEB-INF/views/main/download.jsp"/>
+</definition>
+
+<definition name="main.pricing" extends="layout.main.basic">
+<put-attribute name="title" value="Pricing"/>
+<put-attribute name="main_body" value="/WEB-INF/views/main/pricing.jsp"/>
+</definition>
+
+<definition name="main.product" extends="layout.main.basic">
+<put-attribute name="title" value="Product"/>
+<put-attribute name="main_body" value="/WEB-INF/views/main/product.jsp"/>
+</definition>
+
+<definition name="main.customer" extends="layout.main.basic">
+<put-attribute name="title" value="Customer"/>
+<put-attribute name="main_body" value="/WEB-INF/views/main/customer.jsp"/>
+</definition>
+
+<definition name="main.blog" extends="layout.main.basic">
+<put-attribute name="title" value="Blog"/>
+<put-attribute name="main_body" value="/WEB-INF/views/main/blog.jsp"/>
+</definition>
+
+<!-- user login & register pages -->
+<definition name="layout.user.basic" template="/WEB-INF/tiles/layouts/user_basic.jsp">
+<put-attribute name="title" value="Sign In"/>
+<put-attribute name="user_header" value="/WEB-INF/views/user/header.jsp"/>
+<put-attribute name="user_body" value=""/>
+<put-attribute name="user_footer" value="/WEB-INF/views/user/footer.jsp"/>
+</definition>
+
+<definition name="user.login" extends="layout.user.basic">
+<put-attribute name="title" value="Sign In"/>
+<put-attribute name="user_body" value="/WEB-INF/views/user/login.jsp"/>
+</definition>
+
+<definition name="user.register" extends="layout.user.basic">
+<put-attribute name="title" value="Register"/>
+<put-attribute name="user_body" value="/WEB-INF/views/user/register.jsp"/>
+</definition>
+
+</tiles-definitions>

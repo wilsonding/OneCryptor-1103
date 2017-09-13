@@ -1,0 +1,9 @@
+$bg-color:#333;
+$front-color:#fff;
+$primary-color:#008ed6;
+
+body{
+	background:$bg-color;
+	color: $front-color;
+}
+

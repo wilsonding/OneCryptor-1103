@@ -1,0 +1,1 @@
+<footer class="bd-footer text-muted text-center">&copy;2017 - future by OneCryptor 1103 Studio. All rights reserved</footer>
